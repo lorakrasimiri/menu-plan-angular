@@ -18,13 +18,13 @@ import { AboutUsComponent } from './about-us/about-us.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     AuthModule,
     UserModule,
     PublicModule,
-    SharedModule
+    SharedModule,
+    AppRoutingModule,
   ],
-  exports:[AppRoutingModule],
+  exports: [AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
