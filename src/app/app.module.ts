@@ -8,6 +8,7 @@ import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 
 
@@ -25,7 +26,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
     AppRoutingModule,
   ],
   exports: [AppRoutingModule],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
