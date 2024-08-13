@@ -5,6 +5,7 @@ import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
 import { PublicModule } from './public/public.module';
 import { SharedModule } from './shared/shared.module';
+import { RecipesModule } from './recipes/recipes.module';
 
 import { AppComponent } from './app.component';
 import { AboutUsComponent } from './about-us/about-us.component';
@@ -20,6 +21,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
   imports: [
     BrowserModule,
     AuthModule,
+    RecipesModule,
     UserModule,
     PublicModule,
     SharedModule,
